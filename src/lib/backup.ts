@@ -39,7 +39,7 @@ export async function loadAll(snapshot: {
   data?: Record<string, unknown[]>
 }): Promise<void> {
   if (snapshot.app !== 'flowdeck' || !snapshot.data)
-    throw new Error('Not a valid FlowDeck snapshot.')
+    throw new Error('Not a valid Werkplek backup.')
   await db.transaction('rw', db.tables, async () => {
     for (const t of TABLES) {
       const rows = snapshot.data![t]
@@ -58,7 +58,7 @@ export async function exportAll(): Promise<void> {
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
-  a.download = `flowdeck-backup-${new Date().toISOString().slice(0, 10)}.json`
+  a.download = `werkplek-backup-${new Date().toISOString().slice(0, 10)}.json`
   a.click()
   URL.revokeObjectURL(url)
 }

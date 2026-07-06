@@ -55,7 +55,7 @@ export default function App() {
   if (!ready)
     return (
       <div className="flex h-full items-center justify-center text-sm text-[var(--color-muted)]">
-        Loading FlowDeck…
+        Loading Werkplek…
       </div>
     )
 

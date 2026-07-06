@@ -171,7 +171,7 @@ export function SettingsPage() {
               />
             </div>
           </Row>
-          <Row label="Reset" hint="Delete all FlowDeck data on this device">
+          <Row label="Reset" hint="Delete all Werkplek data on this device">
             <Button
               variant="danger"
               onClick={async () => {
