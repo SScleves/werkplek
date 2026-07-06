@@ -1,4 +1,4 @@
-name: Deploy FlowDeck to GitHub Pages
+name: Deploy Werkplek to GitHub Pages
 
 on:
   push:
