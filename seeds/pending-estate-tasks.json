@@ -1,0 +1,37 @@
+{
+  "app": "flowdeck",
+  "exportedAt": "2026-07-07T21:30:00.000Z",
+  "note": "Seed: all pending estate tasks as of 2026-07-07. Import via Settings -> Data -> Import. REPLACES projects+tasks tables only (notes/vocab/settings untouched).",
+  "data": {
+    "projects": [
+      {
+        "id": "p-lab",
+        "name": "Personal Lab & Estate",
+        "color": "#8fb3e8",
+        "columns": [
+          { "id": "c-todo", "name": "To do" },
+          { "id": "c-doing", "name": "Doing" },
+          { "id": "c-done", "name": "Done", "isDone": true }
+        ],
+        "order": 0,
+        "createdAt": 1751920000000
+      }
+    ],
+    "tasks": [
+      { "id": "t-lab-01", "title": "Push personal-lab pending commits (estate guide, launch card, RUM plan)", "notes": "cd C:\\Repos\\personal-lab; git add -A; git commit; git push\nStatus: https://github.com/SScleves/personal-lab/blob/main/HANDOFF-STATE.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-08", "priority": "high", "tags": ["lab", "git"], "pomodorosDone": 0, "order": 1, "createdAt": 1751920000001, "completedAt": null },
+      { "id": "t-lab-02", "title": "Finish HCP Terraform: org sscleves-lab, workspace lab, LOCAL mode, token -> TF_API_TOKEN secret", "notes": "Steps B1-B5: https://github.com/SScleves/personal-lab/blob/main/vault/02%20Phase%201%20%E2%80%94%20Accounts,%20Repo,%20State.md\nSecrets page: https://github.com/SScleves/personal-lab/settings/secrets/actions", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-08", "priority": "high", "tags": ["lab", "terraform"], "pomodorosDone": 0, "order": 2, "createdAt": 1751920000002, "completedAt": null },
+      { "id": "t-lab-03", "title": "Uncomment cloud{} block in backend.tf + terraform init (remote state live)", "notes": "https://github.com/SScleves/personal-lab/blob/main/terraform/envs/lab/backend.tf", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-09", "priority": "med", "tags": ["lab", "terraform"], "pomodorosDone": 0, "order": 3, "createdAt": 1751920000003, "completedAt": null },
+      { "id": "t-lab-04", "title": "OCI signup: quiet region (eu-marseille-1 / eu-paris-1), note the A1 free shape (4/24 vs 2/12!)", "notes": "https://github.com/SScleves/personal-lab/blob/main/vault/tech/OCI%20Always%20Free.md\nSignup: https://signup.cloud.oracle.com", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-09", "priority": "high", "tags": ["lab", "cloud"], "pomodorosDone": 0, "order": 4, "createdAt": 1751920000004, "completedAt": null },
+      { "id": "t-lab-05", "title": "Week 1 kickoff with Claude: fill oci-cluster module, first terraform apply, k3s up", "notes": "https://github.com/SScleves/personal-lab/blob/main/vault/08%20Month%20Plan.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-11", "priority": "high", "tags": ["lab", "terraform", "k3s"], "pomodorosDone": 0, "order": 5, "createdAt": 1751920000005, "completedAt": null },
+      { "id": "t-lab-06", "title": "Work machine: install Python + pre-commit (local gitleaks guard)", "notes": "winget install Python.Python.3.12 -> pip install pre-commit -> pre-commit install (in personal-lab)\nhttps://github.com/SScleves/personal-lab/blob/main/vault/tech/Secrets%20Hygiene.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-08", "priority": "med", "tags": ["lab", "security"], "pomodorosDone": 0, "order": 6, "createdAt": 1751920000006, "completedAt": null },
+      { "id": "t-lab-07", "title": "Laptop: git clone personal-lab + open vault/ in Obsidian (the guide travels)", "notes": "git clone https://github.com/SScleves/personal-lab.git\nhttps://github.com/SScleves/personal-lab/blob/main/README.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-10", "priority": "med", "tags": ["lab"], "pomodorosDone": 0, "order": 7, "createdAt": 1751920000007, "completedAt": null },
+      { "id": "t-est-08", "title": "Delete leftover repos: numbers (and my-awesome-website if still there)", "notes": "https://github.com/SScleves/numbers/settings (Danger Zone)\nhttps://github.com/SScleves/my-awesome-website/settings", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-10", "priority": "low", "tags": ["github", "cleanup"], "pomodorosDone": 0, "order": 8, "createdAt": 1751920000008, "completedAt": null },
+      { "id": "t-est-09", "title": "thetruth: replace About + Contact placeholders with your own words", "notes": "Marked with <!-- PLACEHOLDER --> comments:\nhttps://github.com/SScleves/thetruth/blob/main/about.html\nhttps://github.com/SScleves/thetruth/blob/main/contact.html", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-12", "priority": "med", "tags": ["site", "writing"], "pomodorosDone": 0, "order": 9, "createdAt": 1751920000009, "completedAt": null },
+      { "id": "t-est-10", "title": "Write the first real post (from the TOPICS backlog)", "notes": "3-step recipe: https://github.com/SScleves/thetruth/blob/main/UPDATING.md\nBacklog: https://github.com/SScleves/thetruth/blob/main/TOPICS.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-14", "priority": "low", "tags": ["site", "writing"], "pomodorosDone": 0, "order": 10, "createdAt": 1751920000010, "completedAt": null },
+      { "id": "t-app-11", "title": "werkplek: export old notes from any device/browser that still has them", "notes": "Settings -> Data -> Export (werkplek-backup-....json). Cloud copies died with the old Supabase project; local browser copies survive.\nhttps://github.com/SScleves/werkplek/blob/main/README.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-11", "priority": "med", "tags": ["app", "data"], "pomodorosDone": 0, "order": 11, "createdAt": 1751920000011, "completedAt": null },
+      { "id": "t-app-12", "title": "(Optional) New Supabase project + restore werkplek sync/login", "notes": "10-min recipe in the code comment:\nhttps://github.com/SScleves/werkplek/blob/main/src/cloudConfig.ts\nSchema: https://github.com/SScleves/werkplek/blob/main/supabase/schema.sql", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-18", "priority": "low", "tags": ["app", "backend"], "pomodorosDone": 0, "order": 12, "createdAt": 1751920000012, "completedAt": null },
+      { "id": "t-mac-13", "title": "Alienware: run its mission (2 game assessments + demo/player station setup)", "notes": "Clone the repo there, Claude reads CLAUDE.md -> dispatched automatically.\nhttps://github.com/SScleves/personal-lab/blob/main/ALIENWARE-MISSION.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-13", "priority": "med", "tags": ["alienware", "games"], "pomodorosDone": 0, "order": 13, "createdAt": 1751920000013, "completedAt": null },
+      { "id": "t-mac-14", "title": "Home server: Milestone 1 — Docker metrics into Dynatrace + New Relic via OTel", "notes": "Needs from you: DT ingest token + NR signup (EU!).\nhttps://github.com/SScleves/personal-lab/blob/main/HOME-SERVER-MISSION.md", "projectId": "p-lab", "columnId": "c-todo", "done": false, "dueDate": "2026-07-15", "priority": "med", "tags": ["home", "otel"], "pomodorosDone": 0, "order": 14, "createdAt": 1751920000014, "completedAt": null }
+    ]
+  }
+}
