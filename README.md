@@ -1,3 +1,5 @@
+> **Live site (open from any browser):** https://sscleves.github.io/werkplek/
+
 # Werkplek
 
 Your personal command center — a local-first productivity web app. Everything
